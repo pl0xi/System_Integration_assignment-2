@@ -16,6 +16,7 @@ public class UserRoute extends RouteBuilder {
 
             from("direct:createUser")
                     .log("User is created")
-                    .setBody(simple("User is created"));
+                    .setBody(simple("User is created"))
+                    .to("http://localhost:8082/camel/data/user/create?bridgeEndpoint=true");
         }
 }
