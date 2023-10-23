@@ -8,6 +8,8 @@
 ## Architectural Style
 We have built our system with microservices architectural style. The process engine (Camunda Processer), Middleware (Apache Camel) and backend is seperated services built with Java (17 & 21). 
 
+![alt text](https://github.com/pl0xi/System_Integration_assignment-2/blob/main/Server_architecture.png)
+
 ## Business process
 We have chosen to create a business process scenario with creating a user. The business process includes a form, business rule and a service task. 
 ![alt text](https://github.com/pl0xi/System_Integration_assignment-2/blob/main/Business_process_diagram.png)
