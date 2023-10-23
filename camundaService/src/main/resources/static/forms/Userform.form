@@ -14,7 +14,7 @@
       }
     },
     {
-      "label": "email",
+      "label": "Email",
       "type": "textfield",
       "layout": {
         "row": "Row_1thlzuz",
@@ -27,7 +27,7 @@
       }
     },
     {
-      "label": "phone number",
+      "label": "Phone number",
       "type": "textfield",
       "layout": {
         "row": "Row_1k98h0y",
