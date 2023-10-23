@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="Bus-rule" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.15.1" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.19.0">
+  <decision id="test" name="Validate user input" camunda:historyTimeToLive="500">
+    <decisionTable id="DecisionTable_0znlvjk">
+      <input id="Input_1" label="Email" camunda:inputVariable="email">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="approved" name="aproved" typeRef="boolean" biodi:width="192" />
+      <rule id="DecisionRule_0pl9nuq">
+        <inputEntry id="UnaryTests_1jo7dkp" expressionLanguage="feel">
+          <text>not("")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00srzh6">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_14hbg1b">
+        <inputEntry id="UnaryTests_1o4mdv3">
+          <text>""</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_18fajfl">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0e9hl3z">
+        <inputEntry id="UnaryTests_1pl75is">
+          <text>null</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0fj6j0i">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="test">
+        <dc:Bounds height="80" width="180" x="170" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
