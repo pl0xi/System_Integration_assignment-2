@@ -19,4 +19,5 @@ Third event is a gateway checking for the result from the business rule. If the 
 
 ## Apache Camel (EIP)
 We are using Apache Camel with rest endpoints. 
-Integration between Camunda Process Engine and Apahce camel is a point to point channel. 
+Integration between Camunda Process Engine and Apache camel is a point to point channel. 
+Between the Apache camel and the backend/services, is a Subscriber and producer EIP pattern implemented. 
